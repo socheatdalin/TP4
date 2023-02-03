@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>menu</title>
+
+        <style>
+                .container {
+                        border: 5px solid black;
+                        width: fit-content;
+                        margin: auto;
+                        padding: 10px;
+                        font-size: 20px;
+                        background-color: gray;
+                }
+
+                .header {
+                        text-align: center;
+                        color: blue;
+                }
+
+                .sub_container {
+                        display: flex;
+                        justify-content: center;
+                }
+
+                .sub_container h5 {
+                        width: 100px;
+                        padding: 5px;
+                        margin: 10px;
+                        color: rgb(32, 31, 30);
+                        border: 2px solid orange;
+                        text-align: center;
+                        border-radius: 10px;
+                        box-shadow: 0 20px 40px rgba(107, 103, 103, 0.2);
+                }
+
+                .menu {
+                        padding: 20px;
+                }
+
+                .header hr {
+                        width: 10%;
+                        text-align: center;
+                        height: 3px;
+                        border-radius: 5px;
+                        background-color: blue;
+                }
+
+                .order img {
+                        border: 2px solid orange;
+                        border-radius: 10px;
+                        justify-content: center;
+                        align-items: center;
+                }
+
+                .order {
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;
+                }
+
+                .order h5 {
+                        display: inline;
+                        padding-top: 50px;
+                }
+
+                .column img {
+                        border: 2px solid orange;
+                        border-radius: 10px;
+                        justify-content: center;
+                        align-items: center;
+                }
+
+                .column {
+                        display: flex;
+                        align-items: center;
+                        margin: 20px;
+                }
+
+                .menu-content {
+                        margin-left: 60px;
+                        font-size: 20px;
+                }
+
+                .column .menu-content h5 {
+                        text-transform: uppercase;
+                        padding-bottom: 5px;
+                        margin-bottom: 10px;
+                        margin-left: 10px;
+                }
+
+                .column .menu-content span {
+                        float: right;
+                }
+
+                @media only screen and (min-width:601px) {
+
+                        /* 601-> max */
+                        .one {
+                                display: none;
+                        }
+
+                }
+
+                @media only screen and (max-width:600px) {
+
+                        /* 600->0 */
+                        .two {
+                                display: none;
+                        }
+                }
+        </style>
+</head>
+
+<body>
+        <div class="container">
+                <div class="one">
+                        <div class="header">
+                                <h2>Our Menu</h2>
+                                <hr>
+                        </div>
+                        <div class="sub_container">
+                                <h5>All</h5>
+                                <h5>Breakfast</h5>
+                                <h5>Lunch</h5>
+                                <h5>Shakes</h5>
+                                <h5>Dinner</h5>
+                        </div>
+                        <div class="menu">
+                                <div class="order">
+                                        <img src="./Pancakes2.png" alt="Pancakes" width="90%">
+                                        <h5>Buttermilk Pancakes </h5>
+                                        <h5 style="padding-left: 110px;">$15.99</h5><hr>
+                                        <p>I'm baby woke mikshk wolf bitters live-edge blue bottle,
+                                                hammock freegan copper mug whatever cold-pressed.</p>
+                                </div>
+                                <div class="order">
+                                        <img src="./burger.jpg" alt="Burger" width="90%">
+                                        <h5>Diner Double </h5>
+                                        <h5 style="padding-left: 110px;">$13.99</h5><hr>
+                                        <p>vaporware iPhone mumblecore selvage raw denim slow-crab leggings gochujang
+                                                helvwtica man braid jianbing.Marfa</p>
+                                </div>
+                        </div>
+                </div>
+                <div class="two">
+                        <div class="header">
+                                <h2>Our Menu</h2>
+                                <hr>
+                        </div>
+                        <div class="sub_container">
+                                <h5>All</h5>
+                                <h5>Breakfast</h5>
+                                <h5>Lunch</h5>
+                                <h5>Shakes</h5>
+                                <h5>Dinner</h5>
+                        </div>
+                        <!-- <div class="row"> -->
+                        <div class="column">
+                                <img src="./Pancakes2.png" alt="Pancakes" width="20%">
+                                <div class="menu-content">
+                                        <h5>Buttermilk Pancakes <span>$15.99</span> </h5><hr>
+                                        <p>I'm baby woke mikshk wolf bitters live-edge blue bottle,hammock freegancopper
+                                                mug whatever cold-pressed.</p>
+                                </div>
+                        </div>
+                        <div class="column">
+                                <img src="./burger.jpg" alt="Burger" width="20%">
+                                <div class="menu-content">
+                                        <h5>Buttermilk Pancakes <span>$13.99</span> </h5><hr>
+                                        <p>vaporware iPhone mumblecore selvage raw denim slow-crab leggings gochujang
+                                                helvwtica man braid jianbing.Marfa.</p>
+                                </div>
+                        </div>
+                        <div class="column">
+                                <img src="./milkshake.jpg" alt="Burger" width="20%">
+                                <div class="menu-content">
+                                        <h5>Godzilla Milkshake<span>$6.99</span> </h5><hr>
+                                        <p>ombucha chillwave fanny pack 3 wolf moon street art photo booth before they
+                                                sold out organic viral.</p>
+                                </div>
+                        </div>
+                </div>
+</body>
+</html>
